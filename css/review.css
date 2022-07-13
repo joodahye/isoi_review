@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+*{margin:0; padding:0; box-sizing:border-box;}
+html{
+	scroll-behavior:smooth;
+}
+html,body{
+	width:100%;
+	height:100%;
+	font:12pt/180%  'Roboto Serif','Noto Serif KR', serif;
+	color:#777272;
+	background:#FFF5FD;
+	margin:0;
+}
+a{
+	text-decoration:none;
+	color:#777272;
+}
+li{
+	list-style:none;
+}
+img{
+	display:block;
+}
+#layout{
+	margin:auto;
+	max-width:1920px;
+	position:relative;
+}
+
+/*상단메뉴*/
+header{
+	display:flex;
+	margin-top:10px;
+	margin-left:100px;
+}
+header>div{
+	display:flex;
+	flex:1;
+	position:relative;
+}
+#topright{
+	display:flex;
+	flex:1;
+	padding-left:50px;
+	padding-top:15px;
+}
+#topright>a{
+	padding:5px;
+	display:block;
+}
+#topright>a:hover{
+	font-weight:bold;
+}
+header>div>a{
+	flex:0.5;
+}
+header>div>nav{
+	flex:3;
+	display:flex;
+	padding:15px;
+	position:relative;
+}
+header>div>nav>a{
+	padding:5px;
+	margin-right:70px;
+	display:block;
+}
+header>div>nav span {display:block; width:100%;}
+header>div>nav>a:hover{
+	font-weight:bold;
+}
+#pro {
+	width:100%;
+	display:block;
+	width:60px;
+	max-width:100%;
+}
+#p2{
+	display:flex;
+	position:absolute;
+	z-index:1;
+	width:350px;
+	top:50px;
+	text-align:center;
+	background:#FFF5FD;
+	left:200px;
+	overflow:hidden;
+	height:0;
+	line-height: 150%;
+}
+
+header>div>nav>#p2>nav>h3{
+	padding:10px 20px 10px 20px;
+	font-size:0.9rem;
+}
+header>div>nav>#p2>nav>a{
+	display:block;
+	padding:5px;
+	padding-right:10px;
+	font-size:0.9rem;
+}
+
+
+/*메인 리뷰 텍스트*/
+h1{
+	padding:70px;
+	text-align:center;
+	font-size:3.0rem;
+	font-weight:400;
+}
+
+
+/*리뷰 첫번째 테이블*/
+.table1{border:1px solid red;
+	width:600px;
+	margin:auto;
+	table-layout:fixed;/*테이블간격동일*/
+	border-collapse:collapse;
+
+}
+.table1 td{
+	border:1px solid gray;
+	padding:25px;
+	text-align:center;
+}
+.table1 td:hover {
+	background:gray;
+}
+td:hover a{
+	color:white;
+}
+
+/*리뷰 두번째 테이블*/
+.table2{
+	border:1px solid red;
+	width:70%;
+	margin:auto;
+	table-layout:fixed;/*테이블간격동일*/
+	border-collapse:collapse;
+	margin-top:50px;
+}
+.table2 td{
+	border:1px solid gray;
+}
+.table2 td>div{
+	padding:30px;
+	display:flex;
+	align-items:center;
+}
+.table2 td>div>img{
+	width:80px;
+}
+.table2 td>div>div{
+	flex:1;
+	text-align:center;
+	line-height:200%;
+	color:black;
+}
+.table2 td>div>div>h2{
+	padding-bottom:10px;
+	font-size:1.3rem;
+	color:#2f2f2f;
+}
+
+/*테이블 세번째 카테고리 검색*/
+#ca{
+	width:100%;
+	float:right;
+	margin-right:230px;
+	margin-top:100px;
+	text-align:right;
+}
+#ca select{
+	padding:10px 40px;
+	background:transparent;
+	margin-right:20px;
+}
+#ca input{
+	background:transparent;
+	margin-right:20px;
+	padding:10px 0;
+	border:1px solid gray;
+}
+#ca button{
+	cursor:pointer;
+	border:none;
+	padding:10px 40px;
+	background:#2f2f2f;
+	color:white;
+	outline:none;
+}
+
+/*후기 컨텐츠*/
+#review{
+	width:65%;
+	margin:auto;
+	margin-top:200px;
+	margin-bottom:200px;
+}
+
+ul li{
+	display:flex;
+	border-bottom:1px solid gray;
+	padding: 20px 150px 20px 200px;
+	font-size:0.9rem;
+	align-items:center;
+}
+ul li:first-child{
+	border-top:1px solid gray;
+}
+ul li img{
+	margin-right:50px;
+}
+ul li p{
+	padding-bottom:20px;
+}
+/*하단*/
+footer {
+}
+#footer1{
+	display:flex;
+	align-items:center;
+	background:#777272;
+	color:white;
+	padding-left:230px;
+}
+#footer1>a{
+	color:white;
+ font-size:0.9rem;
+ padding:5px;
+ display:block;
+ white-space:nowrap;
+ font-family:'Noto Serif KR', serif;
+}
+#footer1 img{
+	width:40px;
+}
+#footer1 .insta{
+	padding-left:1150px;
+}
+#footer2{
+	padding:30px 0 30px 230px;
+	line-height:180%;
+	background:#B9B1B1;
+	font-size:0.9rem;
+	font-family:'Noto Serif KR', serif;
+}
